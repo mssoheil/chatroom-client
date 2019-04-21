@@ -6,7 +6,7 @@ export default class ApiUrl {
 		this.url = {
 			protocol: "https",
 			host: "multiroom-chatroom-server.herokuapp.com",
-			port: "6464",
+			port: "",
 			app: "api",
 			res: {
 				authentication: {
@@ -36,7 +36,8 @@ export default class ApiUrl {
 			q += `${querry[i]}&`;
 		}
 		var res = this.url.res[resource][method][version];
-		var uri = `${this.url.protocol}://${this.url.host}:${this.url.port}/${
+		// var uri = `${this.url.protocol}://${this.url.host}:${this.url.port}/${
+		var uri = `${this.url.protocol}://${this.url.host}/${
 			this.url.app
 		}/${version}/${res}`;
 		return uri;

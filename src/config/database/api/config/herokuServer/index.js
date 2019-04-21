@@ -1,7 +1,7 @@
 export default {
 	protocol: "https",
 	host: "multiroom-chatroom-server.herokuapp.com",
-	port: "6464",
+	port: "",
 	app: "chatroom",
 	version: "v1"
 };
