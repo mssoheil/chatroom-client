@@ -58,10 +58,12 @@ class Profile extends Component {
 							<Avatar
 								src={
 									!this.store.imageChanged
-										? `http://localhost:6464/chatroom/v1/img/${
+										//? `http://localhost:6464/chatroom/v1/img/${
+										? `https://multiroom-chatroom-server.herokuapp.com/chatroom/v1/img/${
 												this.loginRegisterStore.userAvatar
 										  }`
-										: `http://localhost:6464/chatroom/v1/img/${
+										//: `http://localhost:6464/chatroom/v1/img/${
+										: `https://multiroom-chatroom-server.herokuapp.com/chatroom/v1/img/${
 												this.store.imageName
 										  }`
 								}

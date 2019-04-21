@@ -59,7 +59,8 @@ class Users extends Component {
 									>
 										<UsersAvatar
 											textColor={customTheme.color.textGray}
-											src={`http://localhost:6464/chatroom/v1/img/${
+											// src={`http://localhost:6464/chatroom/v1/img/${
+											src={`https://multiroom-chatroom-server.herokuapp.com/chatroom/v1/img/${
 												item.avatar
 											}`}
 										/>

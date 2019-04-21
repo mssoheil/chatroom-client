@@ -41,7 +41,8 @@ const MenuProps = {
 class ChatroomPage extends Component {
 	constructor(props) {
 		super(props);
-		this.socket = io("http://localhost:6464");
+		//this.socket = io("http://localhost:6464");
+		this.socket = io("https://multiroom-chatroom-server.herokuapp.com");
 	}
 
 	@observable
@@ -75,7 +76,8 @@ class ChatroomPage extends Component {
 			<Wrapper>
 				<AccountRow>
 					<UserAvatar
-						src={`http://localhost:6464/chatroom/v1/img/${
+						// src={`http://localhost:6464/chatroom/v1/img/${
+						src={`https://multiroom-chatroom-server.herokuapp.com/chatroom/v1/img/${
 							this.loginRegisterStore.userAvatar
 						}`}
 					/>
