@@ -2,7 +2,6 @@ import axios from "axios";
 
 import api from "../api";
 
-import Reactotron from "reactotron-react-js";
 
 export default new class {
 	get(resource, version, header, body, timeout) {
@@ -87,7 +86,7 @@ export default new class {
 	logger(error) {
 		console.log(error);
 		// if (__DEV__) {
-		Reactotron.error(error);
+		//Reactotron.error(error);
 		// }
 	}
 }();
